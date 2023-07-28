@@ -1,0 +1,33 @@
+
+
+<div id="header" style="display: flex; justify-content: center; align-items: center;">
+  <p>Pregled akcija:</p>
+</div>
+<table class="table table-striped" style="margin-top: 50px;margin-bottom: 50px">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Pocetak akcije</th>
+    <th scope="col">Kraj akcije</th>
+    <th scope="col">Iznos akcije</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let x of Akcije">
+    <th scope="row">{{x.id}}</th>
+    <td>{{VratiDatum(x.od)}}</td>
+    <td>{{VratiDatum(x.do)}}</td>
+    <td>{{x.iznosPopusta}}</td>
+    <td>
+      <button (click)="PregledajAkciju(x)">Pregledaj</button>
+      <button>Ukloni</button>
+    <p *ngIf="IsteklaAkcija(x)" style="color: red; display: inline">ISTEKLO</p>
+    </td>
+    <td>
+      <button *ngIf="IsteklaAkcija(x)==false" (click)="saljiMail()">Obavijesti korisnike</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<app-footer></app-footer>

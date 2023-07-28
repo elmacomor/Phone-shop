@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+
+nav{
+  background-color:darkslategray;
+  margin-bottom: 20px;
+}
+.nav-link{
+  color: white;
+  opacity: 90%;
+}
+li{
+  padding-right: 50px;
+}
+#MojProfil,#MojProfil2{
+  display:flex;
+  position: absolute;
+  margin-left: 81%;
+}
+#ikonica{
+  color: white;
+  margin-top: 13px;
+}
+#logout,#logout2{
+  display:flex;
+  position: absolute;
+  margin-left: 90%;
+}
+#logoutIkonica{
+  color: white;
+  margin-top: 13px;
+}

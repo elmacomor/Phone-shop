@@ -1,0 +1,56 @@
+<ng-container *ngIf="role === 'kupac'">
+<app-navbar-kupac></app-navbar-kupac>
+
+<div class="my-profile">
+  <h2>Moj profil</h2>
+  <form>
+    <div class="form-group">
+      <label for="ime">First Name</label>
+      <input type="text" id="ime" name="ime" [(ngModel)]="ime" [disabled]="!editMode" />
+    </div>
+    <div class="form-group">
+      <label for="prezime">Last Name</label>
+      <input type="text" id="prezime" name="prezime" [(ngModel)]="prezime" [disabled]="!editMode" />
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" disabled />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" disabled />
+    </div>
+    <button type="button" (click)="editMode ? onSaveClick() : onEditClick()">{{ editMode ? 'Save Changes' : 'Edit' }}</button>
+  </form>
+</div>
+
+<app-footer></app-footer>
+</ng-container>
+
+
+<ng-container *ngIf="role === 'uposlenik'">
+  <app-navbar-uposlenik></app-navbar-uposlenik>
+
+  <div class="my-profile">
+    <h2>Moj profil</h2>
+    <form>
+      <div class="form-group">
+        <label for="ime">First Name</label>
+        <input type="text" id="ime2" name="ime" [(ngModel)]="ime" [disabled]="!editMode" />
+      </div>
+      <div class="form-group">
+        <label for="prezime">Last Name</label>
+        <input type="text" id="prezime2" name="prezime" [(ngModel)]="prezime" [disabled]="!editMode" />
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username2" name="username" [(ngModel)]="username" disabled />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email2" name="email" [(ngModel)]="email" disabled />
+      </div>
+      <button type="button" (click)="editMode ? onSaveClick() : onEditClick()">{{ editMode ? 'Save Changes' : 'Edit' }}</button>
+    </form>
+  </div>
+</ng-container>

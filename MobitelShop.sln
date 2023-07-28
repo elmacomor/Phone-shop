@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobitelShop", "MobitelShop\MobitelShop.csproj", "{F9956CDE-CF83-425F-9589-E481CB49A3F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9956CDE-CF83-425F-9589-E481CB49A3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9956CDE-CF83-425F-9589-E481CB49A3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9956CDE-CF83-425F-9589-E481CB49A3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9956CDE-CF83-425F-9589-E481CB49A3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {569D1668-587A-49CD-8B24-955C78D46E73}
+	EndGlobalSection
+EndGlobal

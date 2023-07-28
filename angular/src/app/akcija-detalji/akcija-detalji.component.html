@@ -1,0 +1,22 @@
+<div id="header" style="display: flex; justify-content: center; align-items: center;">
+  <p>Proizvodi na akciji:</p>
+</div>
+
+<!--Get proizvodi-->
+<div style="display:grid; grid-template-columns: repeat(4, 1fr);">
+  <div class="card" *ngFor="let x of GetProizvode()" style="margin: 5px">
+    <img class="card-img-top" style="width:250px;height: 250px; margin:auto" src="{{GetSlikaBase64Umanjena_fs(x)}}" alt="Card image cap">
+    <div class="card-body" style="margin: auto">
+      <h5 class="card-title">{{x.marka}}</h5>
+      <h5 class="cijena">{{x.cijena}} KM</h5>
+    </div>
+    <p class="card-text" style="margin:auto;margin-bottom: 30px">{{x.kratakOpisProizvoda}}</p>
+    <a class="btn btn-primary" style="margin: auto;margin-bottom: 5px" (click)="Ukloni(x)" >Ukloni sa akcije</a>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+

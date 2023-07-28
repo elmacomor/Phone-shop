@@ -1,0 +1,20 @@
+<app-navbar-kupac></app-navbar-kupac>
+<html>
+<body>
+<table>
+  <tr>
+    <th>Naziv servisa</th>
+    <th>Kontakt broj</th>
+    <th>Grad</th>
+    <th>Cijena (KM)</th>
+  </tr>
+  <tr *ngFor="let x of get_podaci()">
+    <td>{{x.nazivServisa}}</td>
+    <td>{{x.brojTelefona}}</td>
+    <td>{{x.nazivGrada}}</td>
+    <td>{{x.cijena}}</td>
+  </tr>
+</table>
+</body>
+</html>
+
